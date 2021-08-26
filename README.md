@@ -1,5 +1,6 @@
 # hello-world-mavericks
-It is a sample spring-boot application which will display "Hello World, from team Mavericks"
+It is a sample spring-boot application to demonstrate docker concepts.
+Output: On running endpoint /home : "Hello World, from Team Mavericks" will be displayed
 
 1. login to : https://labs.play-with-docker.com/ (for team members who are not able to install docker in local)
 2. Start Docker session -> add new Instance
