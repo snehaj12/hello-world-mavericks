@@ -1,7 +1,6 @@
 <settings>
  <servers>
    <server>
-      <id>docker.io</id>
       <username>snehaj12</username>
       <password>Learn@12!</password>
     </server>

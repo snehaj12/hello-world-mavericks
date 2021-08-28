@@ -51,10 +51,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
+				<!-- <configuration>
 					<serverId>docker-hub</serverId>
 					<registryUrl>https://index.docker.io/v1/</registryUrl>
-				</configuration>
+				</configuration> -->
 				<executions>
 					<execution>
 						<goals>
