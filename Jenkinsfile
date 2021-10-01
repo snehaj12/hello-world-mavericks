@@ -31,7 +31,7 @@ environment {
             steps {
                 sh 'mvn -Dmaven.test.failure.ignore=true install' 
 				 script { 
-                  dockerImage = docker.build registry + ":$BUILD_NUMBER" 
+                  dockerImage = docker.build registry
                 }
             }
             post {
