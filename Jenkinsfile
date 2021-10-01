@@ -3,7 +3,7 @@ pipeline {
 environment { 
        registry = "https://docker.io/v1/" 
        registryCredential = 'snehaj12' 
-       dockerImage = 'snehaj12/helloworld' 
+       dockerImage = '' 
     }
     agent any
     tools {
