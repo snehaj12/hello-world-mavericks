@@ -62,7 +62,7 @@
 						</goals>
 						<configuration>
 						<image>
-						<name>snehaj12/helloworld</name>
+						<name>http://docker.io/snehaj12/helloworld</name>
 						</image>
 						</configuration>
 					</execution>
