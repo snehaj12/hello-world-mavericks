@@ -3,7 +3,7 @@ pipeline {
 environment { 
        registry = "https://docker.io/v1/" 
        registryCredential = 'snehaj12' 
-       dockerImage = '' 
+       dockerImage = 'snehaj12/helloworld' 
     }
     agent any
     tools {
@@ -29,7 +29,7 @@ environment {
         }
         stage ('Build') {
             steps {
-                sh 'mvn spring-boot:build-image -DskipTests' 
+                sh 'mvn clean install -DskipTests=true -Dspring-boot.build-image.imageName=snehaj12/helloworld' 
 				 script { 
                   dockerImage = docker.build registry
                 }
