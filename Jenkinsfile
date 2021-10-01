@@ -6,8 +6,20 @@ environment {
        dockerImage = '' 
     }
     agent any
-    stages {
+    tools {
+        maven 'maven'
         
+    }
+	
+    stages {
+        stage ('Initialize') {
+            steps {
+               
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                
+            }
+        }
 
 	stage('Cloning our Git') { 
           steps { 
