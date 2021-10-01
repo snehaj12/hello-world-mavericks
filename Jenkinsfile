@@ -29,7 +29,7 @@ environment {
         }
         stage ('Build') {
             steps {
-                sh 'mvn -Dmaven.test.failure.ignore=true install' 
+                sh 'mvn spring-boot:build-image -DskipTests' 
 				 script { 
                   dockerImage = docker.build registry
                 }
