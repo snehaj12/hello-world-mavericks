@@ -51,20 +51,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<serverId>docker-hub</serverId>
-					<registryUrl>tcp://docker.io</registryUrl>
-				</configuration>
+				
 				<executions>
 					<execution>
 						<goals>
 							<goal>build-image</goal>
 						</goals>
-						<configuration>
-						<image>
-						<name>snehaj12/helloworld</name>
-						</image>
-						</configuration>
+						
 					</execution>
 				</executions>
 			</plugin>
