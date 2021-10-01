@@ -1,9 +1,9 @@
 pipeline {
 
 environment { 
-       registry = "https://docker.io/v1/" 
-       registryCredential = 'snehaj12' 
-       dockerImage = '' 
+       registry = "https://hub.docker.com/" 
+       registryCredential = '75b25a17-f2cd-4bf4-92c5-acf82a040672' 
+       dockerImage = 'helloworld' 
     }
     agent any
     tools {
