@@ -51,8 +51,8 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<executions>
-					<!--<execution>
+				<!--<executions>
+					<execution>
 						<goals>
 							<goal>build-image</goal>
 						</goals>
@@ -61,8 +61,8 @@
 						<name>snehaj12/helloworld</name>
 						</image>
 						</configuration>
-					</execution> -->
-				</executions>
+					</execution> 
+				</executions>-->
 			</plugin>
 		</plugins>
 	</build>
