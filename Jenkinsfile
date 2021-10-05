@@ -8,6 +8,8 @@ environment {
     agent any
     tools {
         maven 'maven'
+	dockerTool 'docker'
+}
         
     }
 	
