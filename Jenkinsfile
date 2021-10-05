@@ -1,9 +1,9 @@
 pipeline {
 
 environment { 
-       registry = "https://hub.docker.com/" 
-       registryCredential = '75b25a17-f2cd-4bf4-92c5-acf82a040672' 
-       dockerImage = 'helloworld' 
+       registry = "https://hub.docker.com/snehaj12/helloworld" 
+       registryCredential = 'snehaj12/helloworld' 
+       dockerImage = '' 
     }
     agent any
     tools {
@@ -31,7 +31,7 @@ environment {
             steps {
                 sh 'mvn clean install -DskipTests=true -Dspring-boot.build-image.imageName=snehaj12/helloworld' 
 				 script { 
-                  dockerImage = docker.build registry
+                  dockerImage = docker.build registry:$BUILD_NUMBER
                 }
             }
             post {
