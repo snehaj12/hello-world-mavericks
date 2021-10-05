@@ -31,7 +31,7 @@ environment {
             steps {
                 sh 'mvn clean install -DskipTests=true -Dspring-boot.build-image.imageName=snehaj12/helloworld' 
 				 script { 
-					 dockerImage = docker.build registry:${env.BUILD_NUMBER}
+					 dockerImage = docker.build registry
                 }
             }
             post {
