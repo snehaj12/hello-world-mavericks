@@ -10,4 +10,9 @@ public class HelloWorldController {
 	public String getHomePage() {
 		return "Hello World, from Team Mavericks. This is version6";
 	}
+	
+	@GetMapping("/")
+	public String welcome() {
+		return "Service is Up!!!";
+	}
 }
